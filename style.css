@@ -1,0 +1,331 @@
+/*reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: rgb(27, 81, 94);
+    color: rgb(10, 31, 36);
+}
+/*menu*/
+
+
+/*colores: h1 y a: rgb(10, 31, 36), a::hover: rgb(26, 72, 83), nav: rgb(51, 130, 117)*/
+
+
+
+/*- header -*/
+header{
+    height: 100px;
+    background-color: rgb(51, 130, 117);
+    padding: 0 50px;
+    color: rgb(10, 31, 36);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    text-transform: uppercase;
+    font-weight: 200;
+}
+.menu a{
+    color: rgb(10, 31, 36);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+.mostrar-menu{
+    order: 1;
+}
+.menua a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: rgb(50, 128, 148);
+}
+#check{
+    display: none;
+}
+
+/*imagen despues de menu*/
+.encabezado-imagen{
+    background-image: url(enfermera.jpeg);
+    height: 500px;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+.encabezado-imagen p {
+    font-size: 36px;
+}
+.encabezado-imagen h2{
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+/*bloques de informacion*/
+.chamba{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(23, 70, 82);
+}
+.chamba img{
+    border-radius: 100%;
+    width: 500px;
+}
+.chamba div{
+    padding: 30px 30px;
+
+}
+.chamba h4{
+    color: black;
+    font-size: 20px;
+    margin: 15px 0;
+}
+.chamba div p{
+    color: black;
+    font-size: 18px;
+}
+.saber-mas{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(6, 28, 34);
+    padding: 10px 30px;
+    border: 4px solid rgb(6, 28, 34);
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+}
+.saber-mas:hover{
+    background-color: rgb(6, 28, 34);
+    color: #fff;
+}
+
+
+/*footer*/
+footer{
+    background-color: rgb(1, 53, 38);
+    padding-top: 70px;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+.conter{
+   width: 140px;
+   margin: auto;
+   display: flex; 
+   justify-content: center;
+}
+.footer{
+    width: 100%;
+}
+footer h4{
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #51b648;
+}
+
+.lista{
+    padding: 0;
+}
+.lista li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+.lista li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: rgb(12, 85, 65);
+    transition-duration: .5s;
+}
+.lista li:hover::before{
+    width: 70px;
+}
+.social{
+    text-align: center;
+    padding: 0;
+}
+.social li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.social i {
+    color: rgb(59, 185, 152);
+    font-size: 25px;
+}
+
+footer a:hover{
+    color: rgb(4, 167, 120);
+}
+.social i:hover {
+    color: rgb(11, 29, 24);
+
+}
+.botom{
+    background: rgb(19, 24, 34);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.botom p{
+    color: rgb(44, 56, 78);
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
+
+
+/*pestañas de información*/
+.info{
+    margin: 30px;
+    padding: 40px;
+    min-width: 260px;
+    background-color: rgb(35, 116, 93);
+    color: rgb(2, 15, 14);
+}
+.info p{
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 15px;
+}
+
+.info2{
+    margin: 20px;
+    padding: 20px;
+    min-width: 260px;
+}
+.info2 li{
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: rgb(35, 116, 93);
+    color: rgb(2, 15, 14);
+}
+
+.enca{
+    background-image: url(enfermera.jpeg);
+    height: 600px;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.enca h2{
+    font-size: 70px;
+    padding: 20px 0;
+}
+
+.enca2{
+    background-image: url(enfermera.jpeg);
+    height: 600px;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.enca2 h2{
+    font-size: 70px;
+    padding: 20px 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
+
+
+
+/*- @media -*/
+@media(max-width: 768px){
+    /*header*/
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(51, 130, 117);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+    /*- enca y enca 2 -*/
+    .encabezado-imagen{
+        height: 400px;
+    }
+    .encabezado-imagen p {
+        font-size: 26px;
+    }
+    .encabezado-imagen h2{
+        background-color: rgba(15, 51, 37, 0.555);
+        font-size: 30px;
+        padding: 20px 0;
+    }
+    .enca{
+        height: 300px;
+    }
+    .enca2{
+        height: 300px;
+    }
+    .enca h2{
+        background-color: rgba(15, 51, 37, 0.555);
+        font-size: 30px;
+        padding: 20px 0;
+    }
+    .enca2 h2{
+        background-color: rgba(15, 51, 37, 0.555);
+        font-size: 30px;
+        padding: 20px 0;
+    }
+    /*- chamba -*/
+    .chamba{
+        flex-direction: column;
+    }
+    .chamba img{
+        width: 200px;
+    }
+}

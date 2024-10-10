@@ -1,0 +1,82 @@
+<div class="bloque">
+    <div class="bk">
+        <figure>
+            <img src="servicios.png">
+        </figure>
+        <div>
+        <h3>Acompañantes Terapeuticos</h3>
+        <p>En BADANTE, nuestros acompañantes terapéuticos ofrecen apoyo emocional y psicológico personalizado. Facilitamos intervenciones y técnicas adaptadas a cada necesidad, promoviendo el bienestar integral y el desarrollo personal en un entorno de comprensión y cuidado.</p>          
+        <a href="AT.html">leer mas</a>  
+        </div>
+
+    </div>
+
+    <div class="bk">
+        <figure>
+            <img src="gatito.png">
+        </figure>
+        <div>
+        <h3>Acompañantes Gerontológicos</h3>
+        <p>En BADANTE, nuestros acompañantes gerontológicos brindan cuidado especializado y afectuoso a personas mayores. Ofrecen apoyo en actividades diarias y compañía, mejorando la calidad de vida y proporcionando seguridad en el hogar.</p>
+        <a href="AG.html">leer mas</a>            
+        </div>
+
+    </div>
+
+
+    css:
+
+    .bloque{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.bk{
+    
+    width: 100%;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: rgb(0, 129, 112);
+    box-shadow: 0px 1px 10px rgba (0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.bk:hover{
+    box-shadow: 5px 5px 20px rgba (0,0,0,0.4);
+    transform: translateY(-3%);
+}
+.bk img{
+    width: 50%;
+    height: 400px;
+}
+.bloque .bk {
+    padding: 5px;
+    text-align: center;
+}
+.bloque .bk p{
+    line-height: 1.5;
+    color: rgb(2, 15, 14);
+}
+.bloque .bk h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.bloque .bk a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: rgb(2, 15, 14);
+    border: 1px solid rgb(7, 65, 57);
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+.bloque .bk a:hover{
+    background: rgb(7, 65, 57);
+    color: white;
+}
